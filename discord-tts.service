@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-User=root
-WorkingDirectory=/root/discord-tts
-ExecStart=/root/discord-tts/.venv/bin/python bot.py
+User=danaiwongvichian
+WorkingDirectory=/home/danaiwongvichian/discord-tts
+ExecStart=/home/danaiwongvichian/discord-tts/.venv/bin/python bot.py
 Restart=always
 RestartSec=5
 Environment=PYTHONUNBUFFERED=1
