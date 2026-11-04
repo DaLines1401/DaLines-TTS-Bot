@@ -1,0 +1,15 @@
+[Unit]
+Description=DaLines Discord & Twitch TTS Bot Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/discord-tts
+ExecStart=/root/discord-tts/.venv/bin/python bot.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
